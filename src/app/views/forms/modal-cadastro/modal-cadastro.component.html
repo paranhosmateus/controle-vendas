@@ -1,0 +1,66 @@
+<div class="modal-header" id="modal">
+  <div class="modal-body">
+    <c-col xs="12">
+      <c-card class="mb-4">
+        <c-card-header>
+          <div class="row">
+            <div class="col">
+              Incluir Produto
+            </div>
+            <div class="col">
+              <div id="btn-close">
+                <button type="button" (click)="activeModal.dismiss(produtos)" class="btn btn-sn"><i class="bi bi-x" id="bi"></i></button>
+                
+              </div>
+            </div>
+          </div>
+        </c-card-header> 
+        <br>
+        <c-card-body>
+          
+            <form #form= "ngForm" (ngSubmit)="salvar(form)">
+              <div class="form-group row" id="label">
+                <label for="colFormLabel" class="col-sm-1 col-form-label">Nome do produto:</label>
+                <div class="col-sm-4">
+                  <input type="text" [(ngModel)]="produtos.nomeProduto" name="nomeProduto" class="form-control" placeholder="Digite o nome do produto">
+                </div>
+                <label for="colFormLabel"  class="col-sm-1 col-form-label text-right">Marca do produto:</label>
+                <div class="col-sm-4">
+                  <input type="text" [(ngModel)]="produtos.marcaProduto" name="marcaProduto" class="form-control" placeholder="Digite a Marca do produto">
+                </div>
+              
+                <div class="form-group row">
+                  <label for="colFormLabel" class="col-sm-1 col-form-label">Sigla do produto:</label>
+                  <div class="col-sm-4">
+                    <input type="text" [(ngModel)]="produtos.siglaProduto" name="siglaProduto" class="form-control" placeholder="Digite a Sigla do produto">
+                  </div>
+                  <label for="colFormLabel" class="col-sm-1 col-form-label">Código de Barras:</label>
+                  <div class="col-sm-4">
+                    <input type="text" [(ngModel)]="produtos.codidoBarrasProduto" name="codidoBarrasProduto" class="form-control" placeholder="Digite o Código de Barras">
+                  </div>
+                  
+
+                  <br><br><br>
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1" class="col-sm-1 col-form-label">Descrição</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  </div>
+                </div>
+      
+      
+          <div>
+            <br><br><br>
+      
+            <div class="col">
+              <div id="btn-rigth">
+                <button type="submit" class="btn btn-primary btn-sm" >Salvar</button>
+              </div>
+            </div>
+          </div>
+          </form>
+        </c-card-body> 
+      </c-card>      
+    </c-col>
+
+</div>

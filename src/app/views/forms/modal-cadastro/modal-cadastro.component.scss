@@ -1,0 +1,44 @@
+#modal {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #333;
+    min-width: 1400px;
+    position: fixed;
+    left: 56%;
+    padding: 24px;
+    top: 45%;
+    transform: translate(-50%, -55%);
+   
+  }
+  #btn-rigth{
+    position:absolute; 
+    top:4%;
+    left:95%;
+    transform: translate(-50%, -50%);
+    margin-top: 375px;
+  }
+  #btn-col{
+    transform: translate(-50%, -50%);
+    top:2%;
+    left:86%;
+    position:absolute;
+    margin-top: 383px;
+  }
+  #btn-close{
+    position:absolute; 
+    top:4%;
+    left:90%;
+    transform: translate(-50%, -50%);
+    margin-top: 0px;
+  }
+  #label{
+    left:70%;
+  }
+  #bi{
+    color:rgb(9, 10, 10);
+    position:absolute; 
+    top:4%;
+    left:420%;
+    transform: translate(-50%, -50%);
+    margin-top: 15px;
+}
